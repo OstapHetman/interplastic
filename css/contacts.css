@@ -143,7 +143,7 @@ img {
 /* basic container for tabs */
 
 .tabs {
-    min-width: 200px;
+    min-width: 205px;
     max-width: 500px;
     padding: 0px;
     margin: 0 auto;
@@ -170,7 +170,7 @@ img {
     margin: 0 0 5px;
     line-height: 1.5;
     color: #383838;
-    /* прикрутим анимацию */
+    /* animation */
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -182,8 +182,21 @@ img {
 
 /* content tab 2 style */
 
-#content-tab2 p:nth-child(3) {
+.content-tabs {
+    height: 150px;
+}
+
+.content-tabs p {
+    font-size: 16px;
+}
+
+.content-tabs p:nth-child(1) {
+    margin-top: -5px;
+}
+
+.content-tabs p:nth-child(3) {
     text-decoration: underline;
+    margin-top: 2px;
 }
 
 
@@ -221,14 +234,21 @@ img {
 .tabs>label {
     display: inline-block;
     margin: 0 0 -1px;
-    padding: 15px 58px 15px 58px;
-    font-weight: 600;
+    font-weight: lighter;
     text-align: center;
     color: #aaa;
     border: 0px solid #ddd;
     border-width: 1px 1px 1px 1px;
     background: #f1f1f1;
     border-radius: 3px 3px 0 0;
+}
+
+.tabs .label-tab1 {
+    padding: 19px 58px 15px 35px;
+}
+
+.tabs .label-tab2 {
+    padding: 15px 58px 15px 70px;
 }
 
 
@@ -242,7 +262,7 @@ img {
 
 .tabs>label[for*="1"]:before {
     content: "\f041";
-    font-size: 25px;
+    font-size: 29px;
 }
 
 .tabs>label[for*="2"]:before {
@@ -251,7 +271,10 @@ img {
     font-size: 25px;
 }
 
-/ *hover style */ .tabs>label:hover {
+
+/*hover style */
+
+.tabs>label:hover {
     color: #888;
     cursor: pointer;
 }
@@ -264,6 +287,10 @@ img {
     border-top: 3px solid #e30613;
     border-bottom: 1px solid #fff;
     background: #fff;
+}
+
+#tab1 label {
+    padding-left: -40px;
 }
 
 
