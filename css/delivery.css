@@ -1,0 +1,32 @@
+.size-block {
+    width: 265px;
+    height: 125px;
+    border: 4px #e7e7e7 solid;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
+.information-block {
+    margin-top: 37px;
+}
+
+.icon-check img {
+    padding-left: 14px;
+}
+
+.text {
+    padding-right: 29px;
+}
+
+.proposition-form {
+    margin-top: 60px;
+}
+
+.trust-us {
+    margin-top: 60px;
+}
+
+.contact {
+    margin-top: 88px;
+}

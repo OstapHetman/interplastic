@@ -1,0 +1,38 @@
+    #size-block1,
+    #size-block2 {
+        width: 417px;
+        height: 154px;
+    }
+    
+    .portret {
+        padding-left: 30px;
+    }
+    
+    .text {
+        position: relative;
+    }
+    
+    .money {
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 164px;
+    }
+    
+    .money {
+        width: 98px;
+        height: 29px;
+        background-color: #fecf00;
+        padding: 5px 12px 9px 12px;
+    }
+    
+    .want-u {
+        margin: 0 auto;
+        width: 300px;
+        height: 66px;
+        margin-top: 30px;
+    }
+    
+    .want-btn {
+        width: 300px;
+        height: 66px;
+    }

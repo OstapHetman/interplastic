@@ -143,9 +143,9 @@ img {
 /* basic container for tabs */
 
 .tabs {
-    min-width: 205px;
-    max-width: 500px;
-    padding: 0px;
+    max-height: 203px;
+    max-width: 437px;
+    min-width: 100px;
     margin: 0 auto;
 }
 
@@ -244,11 +244,11 @@ img {
 }
 
 .tabs .label-tab1 {
-    padding: 19px 58px 15px 35px;
+    padding: 19px 70px 15px 30px;
 }
 
 .tabs .label-tab2 {
-    padding: 15px 58px 15px 70px;
+    padding: 15px 80px 15px 50px;
 }
 
 
@@ -262,13 +262,12 @@ img {
 
 .tabs>label[for*="1"]:before {
     content: "\f041";
-    font-size: 29px;
+    font-size: 30px;
 }
 
 .tabs>label[for*="2"]:before {
     content: "\f041";
-    color: #e30613;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 
@@ -283,7 +282,7 @@ img {
 /* active tab */
 
 .tabs>input:checked+label {
-    color: #555;
+    color: #e30613;
     border-top: 3px solid #e30613;
     border-bottom: 1px solid #fff;
     background: #fff;
@@ -304,7 +303,23 @@ img {
 }
 
 
-/* hide text */
+/* Media */
+
+@media screen and (max-width: 680px) {
+    .contacts-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    .first-contact,
+    .second-contact,
+    .third-contact {
+        display: flex;
+        justify-content: center
+    }
+    .first-contact {
+        margin-left: 82px;
+    }
+}
 
 @media screen and (max-width: 680px) {
     .tabs>label {
