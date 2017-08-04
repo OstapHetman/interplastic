@@ -936,7 +936,6 @@ p {
     max-width: 690px;
     margin: 0 auto 35px;
     display: block;
-    \
 }
 
 
@@ -1146,6 +1145,36 @@ p {
         width: 50%;
     }
 }
+
+
+/* =====start Square======= */
+
+.image-square {
+    position: relative;
+}
+
+.square {
+    top: 0px;
+    right: 0px;
+    width: 368px;
+    height: 104px;
+    background-color: black;
+    position: absolute;
+    color: white;
+    margin-top: 202px;
+    opacity: 0.8;
+}
+
+.square b {
+    font-size: 21px;
+}
+
+.left-square {
+    left: 0px;
+}
+
+
+/* ========end Square======= */
 
 @media screen and (max-width: 767px),
 screen and (orientation: landscape) and (max-width: 767px),

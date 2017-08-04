@@ -1,0 +1,19 @@
+.contact-text img {
+    margin-top: 81px;
+}
+
+.contact-text a {
+    color: #e30613;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
+.contact-text .empty-basket {
+    padding-top: 18px
+}
+
+.text-empty-basket {
+    margin: 0px;
+}
