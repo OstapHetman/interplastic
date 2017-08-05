@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.left-block,
+.center-block {
+    margin-right: 1.250em;
+}
+
 .information-block {
     display: flex;
     justify-content: center;
@@ -38,4 +43,29 @@
 
 /* Media Query */
 
-@media screen and (max-width: 1128px) {}
+@media screen and (max-width: 859px) {
+    .right-block {
+        margin-top: 1.250em;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .left-block,
+    .center-block,
+    .right-block {
+        width: 100%;
+        margin: 0px;
+    }
+    .contact-text {
+        padding: 0px;
+    }
+    .contact-text h1 {
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1159px)and (min-width: 992px) {
+    .right-block {
+        margin-top: 1.250em;
+    }
+}
