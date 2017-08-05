@@ -1,3 +1,9 @@
 .ico-wrapper {
     padding-bottom: 88px;
 }
+
+@media screen and (max-width: 678px) {
+    .square {
+        display: none;
+    }
+}
