@@ -2,19 +2,6 @@
     background-color: #fafafa;
 }
 
-.nav-under-slide ul li {
-    display: inline-block;
-    font-size: 13px;
-}
-
-.nav-under-slide ul li:nth-child(1) {
-    text-decoration: underline;
-}
-
-.nav-under-slide ul li:nth-child(3) {
-    color: #d0d0d0;
-}
-
 
 /* Start Header and text under header */
 
@@ -44,25 +31,32 @@
 .contacts-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin-top: 40px;
     flex-wrap: wrap;
+}
+
+.media-contacts {
+    justify-content: center;
 }
 
 
 /* position blocks in contacts-container */
 
 .first-contact,
-img {
-    margin-right: 20px;
+.second-contact {
+    margin-right: 3.125em;
+}
+
+.first-contact img {
+    padding-right: 1.250em;
 }
 
 .second-contact img {
-    margin-right: 20px;
+    padding-right: 1.250em;
 }
 
 .third-contact img {
-    margin-right: 20px;
+    padding-right: 1.250em;
 }
 
 .first-contact em {
@@ -142,17 +136,16 @@ img {
 
 /* basic container for tabs */
 
-.tabs {
-    max-height: 203px;
-    max-width: 437px;
-    min-width: 100px;
-    margin: 0 auto;
-}
+
+/* .tabs {
+    min-height: 12.688em;
+    min-width: 27.313em;
+} */
 
 #text-over {
     position: absolute;
-    top: 95px;
-    left: 570px;
+    top: 5.938em;
+    left: 35.625em;
     z-index: 99;
 }
 
@@ -182,21 +175,22 @@ img {
 
 /* content tab 2 style */
 
-.content-tabs {
+
+/* .content-tabs {
     height: 150px;
-}
+} */
 
 .content-tabs p {
     font-size: 16px;
 }
 
 .content-tabs p:nth-child(1) {
-    margin-top: -5px;
+    padding-top: -5px;
 }
 
 .content-tabs p:nth-child(3) {
     text-decoration: underline;
-    margin-top: 2px;
+    padding-top: 2px;
 }
 
 
@@ -313,10 +307,11 @@ img {
     .second-contact,
     .third-contact {
         display: flex;
-        justify-content: center
+        justify-content: flex-start
     }
-    .first-contact {
-        margin-left: 82px;
+    .media-contacts {
+        justify-content: flex-start;
+        padding: 0 5em 0 5em;
     }
 }
 
@@ -336,5 +331,23 @@ img {
 @media screen and (max-width: 400px) {
     .tabs>label {
         padding: 15px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .media-text {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1017px) {
+    #text-over {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1017px) and (min-width: 715px) {
+    #text-over {
+        display: block;
     }
 }
