@@ -2,20 +2,18 @@
     #size-block2 {
         width: 417px;
         height: 154px;
+        margin-right: 20px;
     }
+    
+    #size-block1 {}
     
     .portret {
         padding-left: 30px;
     }
     
-    .text {
+    .text-vacansies {
         position: relative;
-    }
-    
-    .money {
-        position: absolute;
-        margin-top: -50px;
-        margin-left: 164px;
+        width: 100%;
     }
     
     .money {
@@ -23,6 +21,10 @@
         height: 29px;
         background-color: #fecf00;
         padding: 5px 12px 9px 12px;
+        position: absolute;
+        top: 1.250em;
+        right: -0.250em;
+        display: block;
     }
     
     .want-u {
@@ -35,4 +37,27 @@
     .want-btn {
         width: 300px;
         height: 66px;
+    }
+    
+    @media screen and (max-width: 666px) {
+        #size-block1,
+        #size-block2 {
+            width: 100%;
+            margin: 0;
+        }
+        .contact-text {
+            padding: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 903px) {
+        #size-block2 {
+            margin-top: 0.938em;
+        }
+    }
+    
+    @media screen and (max-width: 1203px) and (min-width: 990px) {
+        #size-block2 {
+            margin-top: 0.938em;
+        }
     }

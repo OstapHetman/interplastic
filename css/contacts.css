@@ -307,7 +307,6 @@ img {
 
 @media screen and (max-width: 680px) {
     .contacts-container {
-        flex-direction: column;
         text-align: left;
     }
     .first-contact,

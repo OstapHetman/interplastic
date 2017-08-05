@@ -8,7 +8,11 @@
 }
 
 .information-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 37px;
+    width: 100%;
 }
 
 .icon-check img {
@@ -30,3 +34,8 @@
 .contact {
     margin-top: 88px;
 }
+
+
+/* Media Query */
+
+@media screen and (max-width: 1128px) {}

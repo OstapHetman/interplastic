@@ -873,13 +873,43 @@ p {
     text-align: center;
 }
 
-#top-header img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto 15px;
+#catalog-header,
+#contacts-header {
+    background: url(../images/bg-5.jpg) no-repeat;
+    background-size: cover;
+    padding: 75px 0 60px;
+    text-align: center;
 }
 
-#top-header p {
+#vacansies-header {
+    background: url(../images/car-bg.png) no-repeat;
+    background-size: cover;
+    padding: 75px 0 60px;
+    text-align: center;
+}
+
+#production-header {
+    background: url(../images/production-bg.png) no-repeat;
+    background-size: cover;
+    padding: 75px 0 60px;
+    text-align: center;
+}
+
+#top-header,
+#catalog-header,
+#contacts-header,
+#vacansies-header,
+#production-header img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#top-header,
+#catalog-header,
+#contacts-header,
+#vacansies-header,
+#production-header p {
     font: 300 16px/20px "Open Sans", sans-serif;
     color: #fff;
     text-align: center;
